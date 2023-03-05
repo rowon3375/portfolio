@@ -5,4 +5,130 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans:wght@600&display=swap");
 /**************************
             color
-**************************//*# sourceMappingURL=common.css.map */
+**************************/
+/**************************
+        pc & sp
+**************************/
+.pc-only1 {
+  display: block;
+}
+@media (max-width: 767px) {
+  .pc-only1 {
+    display: none;
+  }
+}
+
+.sp-only1 {
+  display: none;
+}
+@media (max-width: 767px) {
+  .sp-only1 {
+    display: block;
+  }
+}
+
+.pc-only2 {
+  display: block;
+}
+@media (max-width: 520px) {
+  .pc-only2 {
+    display: none;
+  }
+}
+
+.sp-only2 {
+  display: none;
+}
+@media (max-width: 520px) {
+  .sp-only2 {
+    display: block;
+  }
+}
+
+/**************************
+          common
+**************************/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+main {
+  line-height: 1.8;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+a, p, li, dd, th, td, span {
+  font-size: 1.6rem;
+}
+
+ul, ol {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  color: #000;
+}
+a:hover {
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/**************************
+        common class
+**************************/
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.en {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.btn {
+  transition: 0.3s all ease;
+}
+.btn:hover {
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+/**************************
+        menu
+**************************/
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.menu li a {
+  text-transform: uppercase;
+  color: #e6ccff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+}/*# sourceMappingURL=common.css.map */

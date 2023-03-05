@@ -5,4 +5,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans:wght@600&display=swap");
 /**************************
             color
-**************************//*# sourceMappingURL=page.css.map */
+**************************/
+/***************************************************
+                     top page
+****************************************************/
+main {
+  border: 3px solid #e6d9ff;
+  padding: 100px;
+}
+
+.top a {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.top img {
+  width: 100%;
+}/*# sourceMappingURL=page.css.map */

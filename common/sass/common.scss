@@ -1,3 +1,4 @@
+@charset "utf-8";
 /**************************
             font
 **************************/
@@ -14,5 +15,139 @@ $font_en: 'Noto Sans JP', sans-serif;
             color
 **************************/
 $main_color: #e6d9ff;
-$font_color: #ffffff;
+$text_color: #ffffff;
 $bold_color: #e6ccff;
+$other_color: #ffffbd;
+
+/**************************
+        pc & sp
+**************************/
+//767px
+.pc-only1{
+    display: block;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.sp-only1{
+    display: none;
+
+    @media (max-width: 767px) {
+        display: block;        
+    }
+}
+
+//520px
+.pc-only2{
+    display: block;
+
+    @media (max-width: 520px) {
+        display: none;
+    }
+}
+
+.sp-only2{
+    display: none;
+    
+    @media (max-width: 520px) {
+        display: block;        
+    }
+}
+
+/**************************
+          common
+**************************/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: $font_open;
+    font-weight: 500;
+}
+
+main{
+    line-height: 1.8;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+a, p, li, dd, th, td, span{
+    font-size: 1.6rem;
+}
+
+ul, ol{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s all ease;
+    color: #000;
+
+    &:hover{
+        transition: .3s;
+        opacity: 0.8;
+    }
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+
+/**************************
+        common class
+**************************/
+.container{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.en{
+    font-family: $font_en;
+}
+
+.btn{
+    transition: .3s all ease;
+
+    &:hover{
+        transition: .3s;
+        opacity: 0.8;
+    }
+}
+
+
+/**************************
+        menu
+**************************/
+.menu{
+    ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    li{
+        a{
+            text-transform: uppercase;
+            color: $bold_color;
+            font-weight: bold;
+            text-align: center;
+            font-size: 3rem;
+        }
+    }
+}
